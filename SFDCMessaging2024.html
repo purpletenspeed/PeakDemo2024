@@ -1,0 +1,32 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+</head>
+<body>
+
+   <h1> this is a demo of salesforce web-messaging</h1> 
+
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00D4W000003cuJk',
+				'MIAW_Deployment_Demo',
+				'https://d4w000003cujkuai-dev-ed.my.site.com/ESWMIAWDeploymentDemo1706305620734',
+				{
+					scrt2URL: 'https://d4w000003cujkuai-dev-ed.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://d4w000003cujkuai-dev-ed.my.site.com/ESWMIAWDeploymentDemo1706305620734/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+
+
+</body>
